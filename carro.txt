@@ -1,0 +1,12 @@
+//O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real vFabrica, nValor, arredondado
+    escreva("Valor de fabrica do carro é de: R$")
+    leia(vFabrica)
+    nValor=vFabrica +((28/100)+(45/100))*vFabrica
+    arredondado=mat.arredondar(nValor, 2)
+    escreva("O novo valor do carro sera de: R$",arredondado)
+  }
+}
