@@ -1,0 +1,22 @@
+// Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos
+//brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores
+programa {
+  funcao inicio() {
+    inteiro tEleitores,vB, vN, vV
+    real porcB, porcN, porcV
+    escreva("numero de eleitores que votaram: ")
+    leia(tEleitores)
+    escreva("numero de votos em branco: ")
+    leia(vB)
+    escreva("numero de votos nulos: ")
+    leia(vN)
+    escreva("numero de votos validos: ")
+    leia(vV)
+    porcB=(vB/tEleitores)*100
+    escreva("a porcentagem de votos em  branco é: ", porcB, "%" , "\n")
+    porcN=(vN/tEleitores)*100
+    escreva("a porcentagem de votos nulo é: ", porcN, "%", "\n")
+    porcV=(vV/tEleitores)*100
+    escreva("a porcentagem de votos validos é: ", porcV, "%", "\n")
+  }
+}
