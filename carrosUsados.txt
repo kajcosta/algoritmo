@@ -1,0 +1,17 @@
+//Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do vendedor. 
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+  inteiro carrosVendidos
+  real salario, valorCarros,salarioFinal, arredondado
+  escreva("quantidade de carros vendidos foi de: ")
+  leia(carrosVendidos)
+  escreva("seu salario fixo é de: R$")
+  leia(salario)
+  escreva("Recebe por carros vendidos: R$")
+  leia(valorCarros)
+  salarioFinal=carrosVendidos*valorCarros+salario
+  arredondado=mat.arredondar(salarioFinal, 2)
+  escreva("No fim do mes você recebera R$",arredondado)
+  }
+}
