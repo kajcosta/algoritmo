@@ -1,0 +1,21 @@
+//Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o aluno é aprovado. Escrever também a média calculada. 
+programa {
+  funcao inicio() {
+
+    real a1,a2, m
+
+    escreva("A nota da primeira avaliação foi de: ")
+    leia(a1)
+
+    escreva("A nota da segunda avaliação foi de: ")
+    leia(a2)
+    
+    m=(a1+a2)/2
+    se(m>=6){
+      escreva("sua media foi ",m," parabens você passou")
+    }
+    senao{
+      escreva("sua media foi ",m,"infelizmente esta reprovado")
+    }
+  }
+}
