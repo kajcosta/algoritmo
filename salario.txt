@@ -1,0 +1,15 @@
+//Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. 
+//Calcular e escrever o valor do novo salário. 
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+  real salario, reajuste, nSalario, arredonmento
+  escreva("seu salario atual é de: R$")
+  leia(salario)
+  escreva("sua porcentagem de reajuste foi de: ")
+  leia(reajuste)
+  nSalario=salario+(reajuste/100)*salario
+  arredonmento=mat.arredondar(nSalario, 2)
+  escreva("Seu salario agora será de R$", arredonmento)
+  }
+}
