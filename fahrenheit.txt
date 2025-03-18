@@ -1,0 +1,11 @@
+//Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius 
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real f,c
+    escreva("A temperatura em fahrenheit é: ")
+    leia(f)
+    c=(f-32)/1.8
+    escreva("A temperatura em celcius é: ", c, "°")
+  }
+}
