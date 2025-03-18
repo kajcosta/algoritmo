@@ -1,0 +1,18 @@
+// As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra. 
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    inteiro nM
+    real macas, arredondado
+    escreva("quantidade de maças compradas: ")
+    leia(nM)
+    se(nM>=12){
+      escreva("Você vai pagar R$", nM," pelas maças")
+    }
+    senao{
+      macas=1.30*nM
+      arredondado= mat.arredondar(macas, 2)
+      escreva("Você vai pagar R$", arredondado," pelas maças")
+    }
+  }
+}
