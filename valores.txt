@@ -1,0 +1,22 @@
+//Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.
+//Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente. 
+programa {
+  funcao inicio() {
+  inteiro v1, v2
+
+  escreva("O primeiro valor é: ")
+  leia(v1)
+
+  escreva("O segundo  valor é: ")
+  leia(v2)
+  se(v1>v2){
+    escreva("O primeiro valor é maior que o segundo, logo a ordem crescente é ", v1," ",v2)
+  }
+  senao se(v2>v1){
+    escreva("O segundo numero é maior que o primeiro, logo a ordem crescente é ",v2, " ", v1)
+  }
+  senao{
+    escreva("Os numeros são iguais")
+  }
+  }
+}
