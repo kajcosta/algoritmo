@@ -1,0 +1,18 @@
+//Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte. 
+programa {
+  funcao inicio() {
+    inteiro hInicio, hFim, duracao
+    escreva("Horas que começou o jogo (sem contar os minutos): ")
+    leia(hInicio)
+    escreva("Horas que terminou o jogo (sem contar os minutos): ")
+    leia(hFim)
+    se (hInicio<hFim){
+      duracao=hFim-hInicio
+      escreva("O jogo durou um dia, tendo a duração de ", duracao)
+    }
+    senao se (hInicio>=hFim){
+      duracao=(24-hInicio)+hFim
+      escreva("O jogo durou mais de um dia, tendo a duração de ", duracao)
+    }
+  }
+}
