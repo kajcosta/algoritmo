@@ -1,0 +1,24 @@
+//A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas). 
+programa {
+  inclua biblioteca Matematica --> mat
+
+  funcao inicio() {
+    inteiro hTrabalhadas, hSemanais = 40, hMensais = hSemanais * 4
+    real salarioPorHora, salarioTotal, horasExtras = 0, salarioExtra = 0
+
+    escreva("Horas trabalhadas no mês: ")
+    leia(hTrabalhadas)
+    escreva("Salário por hora: ")
+    leia(salarioPorHora)
+
+    se (hTrabalhadas > hMensais) {
+      horasExtras = hTrabalhadas - hMensais
+      salarioExtra = horasExtras * salarioPorHora * 1.5
+    }
+
+    salarioTotal = (hTrabalhadas * salarioPorHora) + salarioExtra
+    salarioTotal = mat.arredondar(salarioTotal, 2)
+
+    escreva("Seu salario total neste mês sera R$", salarioTotal)
+  }
+}
