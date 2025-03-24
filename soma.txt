@@ -1,0 +1,50 @@
+// Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2maiores.
+programa {
+  funcao inicio() {
+    inteiro n1, n2, n3, total
+
+    escreva("Primeiro valor: ")
+    leia(n1)
+    escreva("Segundo valor: ")
+    leia(n2)
+    escreva("Terceiro valor: ")
+    leia(n3)
+
+    se (n1 == n2 ou n2 == n3 ou n1 == n3) {
+      escreva("Informe números diferentes.")
+    } 
+    senao {
+      se (n1 > n2 e n1 > n3) {
+        se (n2 > n3) {
+          total = n1 + n2
+          escreva("Os dois maiores números são ", n1, " e ", n2, ". A soma é ", total)
+        } 
+        senao {
+          total = n1 + n3
+          escreva("Os dois maiores números são ", n1, " e ", n3, ". A soma é ", total)
+        }
+      } 
+      senao se (n2 > n1 e n2 > n3) {
+        se (n1 > n3) {
+          total = n2 + n1
+          escreva("Os dois maiores números são ", n2, " e ", n1, ". A soma é ", total)
+        } 
+        senao {
+          total = n2 + n3
+          escreva("Os dois maiores números são ", n2, " e ", n3, ". A soma é ", total)
+        }
+      } 
+      senao {
+        se (n1 > n2) {
+          total = n3 + n1
+          escreva("Os dois maiores números são ", n3, " e ", n1, ". A soma é ", total)
+        }
+         senao {
+          total = n3 + n2
+          escreva("Os dois maiores números são ", n3, " e ", n2, ". A soma é ", total)
+        }
+      }
+    }
+  }
+}
+
