@@ -1,0 +1,26 @@
+//Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE. 
+programa {
+  funcao inicio() {
+    cadeia timeD,  timeE
+    inteiro golsD  , golsE 
+    escreva("nome do time do lado direito: ")
+    leia(timeD)
+    escreva("numeros de gols do(a) ", timeD, ": ")
+    leia(golsD)
+    escreva("nome do time do lado esquerdo: ")
+    leia(timeE)
+    escreva("numeros de gols do(a) ", timeE, ": ")
+    leia(golsE)
+    se (golsD==golsE){ 
+      escreva("A partida deu empate")
+    }
+    senao{
+    se(golsD>golsE){
+      escreva("O time do(a) ", timeD, " ganhou a partida")
+     }
+     se(golsE>golsD){
+      escreva("O time do(a) ", timeE, " ganhou a partida")
+     }
+    }
+  }
+}
