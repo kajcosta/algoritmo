@@ -1,0 +1,24 @@
+//Ler dois valores e imprimir uma das três mensagens a seguir:
+//‘Números iguais’, caso os números sejam iguais
+//‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+//‘Segundo maior’, caso o segundo seja maior que o primeiro. 
+programa {
+  funcao inicio() {
+    inteiro a, b 
+    escreva("primeiro numero: ")
+    leia(a)
+    escreva("segundo numero: ")
+    leia(b)
+    se (a==b){
+      escreva("Os dois numeros são iguais")
+    }
+    senao{
+      se(a>b){
+        escreva("O numero ", a , " é maior que o numero ", b)
+      }
+      se(a<b){
+        escreva("O numero ", b , " é maior que o numero ", a)
+      }
+    }
+  }
+}
