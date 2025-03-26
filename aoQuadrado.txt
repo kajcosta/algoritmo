@@ -1,0 +1,13 @@
+//Apresentar os quadrados dos números inteiros de 15 a 200.
+programa {
+  funcao inicio() {
+    inteiro n, r
+    n=15
+    r=0
+    faca{
+      r=n*n
+      escreva(n,"^2","=", r,"\n")
+      n=n+1
+    }enquanto (n<=200)
+  }
+}
