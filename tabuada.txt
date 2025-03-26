@@ -3,7 +3,7 @@ programa {
   funcao inicio() {
     inteiro contador, n, d
     contador=1
-    escreva("Digite o nmero que você quer a tabuada: ")
+    escreva("Digite o número que você quer a tabuada: ")
     leia(n)
     faca{
       d=contador*n

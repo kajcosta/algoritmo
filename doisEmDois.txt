@@ -1,0 +1,11 @@
+//Contagem de números pares Exiba todos os números pares de 2 a 20 utilizando o laço repita.
+programa {
+  funcao inicio() {
+    inteiro n
+    n=2
+    faca{
+      escreva(n,"\n")
+      n=n+2
+    } enquanto (n<=20)
+  }
+}

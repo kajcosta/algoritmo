@@ -10,6 +10,6 @@ programa {
                 soma = soma + n
             }
         } enquanto (n >= 0) 
-        escreva( "Como o ultimo numero não é positivo não o somamos \n O total somado é: ", soma )
+        escreva( "Como o ultimo numero não é positivo, não iremos o somar \n O total somado é: ", soma )
   }
 }
