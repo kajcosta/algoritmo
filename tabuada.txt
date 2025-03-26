@@ -1,0 +1,14 @@
+//Tabuada de um número Peça para o usuário digitar um número e exiba sua tabuada de 1 a 10 utilizando um laço repita.
+programa {
+  funcao inicio() {
+    inteiro contador, n, d
+    contador=1
+    escreva("Digite o nmero que você quer a tabuada: ")
+    leia(n)
+    faca{
+      d=contador*n
+      escreva(contador," x ", n, " = ", d, "\n")
+      contador=contador+1
+    } enquanto(contador<=10)
+  }
+}
