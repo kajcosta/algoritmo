@@ -1,0 +1,17 @@
+//Contagem regressiva Peça para o usuário digitar um número e exiba uma contagem regressiva até 0.
+programa {
+  funcao inicio() {
+    inteiro n
+    escreva("numero inicial da contagem regressiva: ")
+    leia(n)
+    se(n==0){
+      escreva("0 não é um numero valido")
+    }
+    senao{
+      faca{
+        escreva(n,"\n")
+        n=n-1
+       } enquanto(n>=0)
+    }
+  }
+}
