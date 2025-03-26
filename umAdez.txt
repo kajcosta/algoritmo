@@ -1,0 +1,11 @@
+//1. Contagem de 1 a 10 Escreva um programa que exiba os números de 1 a 10, utilizando um laço repita.
+programa {
+  funcao inicio() {
+    inteiro n
+    n=1
+    faca {
+      escreva(n, "\n")
+      n=n+1
+    } enquanto(n<=10)
+  }
+}
