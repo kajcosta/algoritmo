@@ -1,0 +1,38 @@
+// Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma das idades do homem mais velho com a mulher mais nova, ec. 
+programa {
+  funcao inicio() {
+    inteiro h1, h2, m1, m2,s, p
+    escreva("A idade do primeiro homem: ")
+    leia(h1)
+    escreva("A idade do segundo homem: ")
+    leia(h2)
+    escreva("A idade do primeira mulher: ")
+    leia(m1)
+    escreva("A idade do segunda mulher: ")
+    leia(m2)
+      se(h1!=h2 e m1!=m2){
+          se(h1 > h2 ){
+            s= h1
+            p=h2
+          }
+          senao{
+            s=h2
+            p=h1
+          }
+       
+          se(m1>m2){
+            s=s+m2
+            p=p*m1
+          }
+          senao{
+            s=s+m1
+            p=p*m2
+          }
+        escreva("A soma das idades do homem mais velho com a mulher mais nova é ", s, "\n")
+        escreva("O produto das idades do homem mais novo com a mulher mais velha é ", p, "\n")
+  }
+    senao{
+      escreva("As idades devem ser diferentes!\n")
+    }
+  }
+}
