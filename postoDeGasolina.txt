@@ -1,0 +1,57 @@
+//Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+//até 20 litros, desconto de 3% por litro 
+//Álcool
+//acima de 20 litros, desconto de 5% por litro
+//até 20 litros, desconto de 4% por litro 
+//Gasolina
+//acima de 20 litros, desconto de 6% por litro
+//Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. 
+programa
+{
+    inclua biblioteca Matematica --> mat
+    funcao inicio()
+    {
+      real litros, precoPorLitro, desconto, valorFinal
+      caracter tipo
+        escreva("Número de litros vendidos: ")
+        leia(litros)
+        escreva("Digite o tipo de combustível (A-álcool, G-gasolina): ")
+        leia(tipo)
+
+       
+        se (tipo == 'A')
+        {
+            precoPorLitro = 2.90
+            se (litros <= 20)
+            {
+                desconto = 0.03
+            }
+            senao
+            {
+                desconto = 0.05
+            }
+        }
+        senao se (tipo == 'G')
+        {
+            precoPorLitro = 3.30
+            se (litros <= 20)
+            {
+                desconto = 0.04
+            }
+            senao
+            {
+                desconto = 0.06
+            }
+        }
+        senao
+        {
+            escreva("Tipo de combustível inválido!\n")
+            
+        }
+
+        valorFinal = litros * precoPorLitro * (1 - desconto)
+
+         valorFinal = mat.arredondar(valorFinal, 2)
+        escreva("O valor a ser pago é: R$ ", valorFinal, "\n")
+    }
+}
