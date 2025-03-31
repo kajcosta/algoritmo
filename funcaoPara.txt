@@ -1,0 +1,10 @@
+//funcão para
+programa
+{
+	
+	funcao inicio()
+	{
+	 para(inteiro cont=1; cont<=10; cont++){
+		escreva("Jamais serei conhecidapela quantidade de vezes que eu cai, mas pela quantidadee de vezes que eu consegui levantar \n")}
+	}
+}

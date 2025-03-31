@@ -1,0 +1,14 @@
+programa
+{
+	
+	funcao inicio()
+	{
+ para(inteiro cont1=0; cont1<60; cont1++ ) {
+	para(inteiro cont2= 0; cont2<60; cont2++){
+		escreva(cont1,":", cont2, "\n")
+		
+			}
+		}
+
+   	}
+}
