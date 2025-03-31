@@ -1,0 +1,40 @@
+//Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+//           Até 5 Kg      | Acima de 5 Kg
+//Morango  |R$ 2,50 por Kg | R$ 2,20 por Kg
+//Maçã     |R$ 1,80 por Kg | R$ 1,50 por Kg
+//Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real kgMorango, kgMaca, precoMorango, precoMaca, precoTotal, desconto, arredondado
+
+    escreva("Quantidade de morangos (em kg): ")
+    leia(kgMorango)
+    escreva("Quantidade de maçãs (em kg): ")
+    leia(kgMaca)
+
+    se (kgMorango <= 5) {
+      precoMorango = kgMorango * 2.50
+    } senao {
+      precoMorango = kgMorango * 2.20
+    }
+
+    se (kgMaca <= 5) {
+      precoMaca = kgMaca * 1.80
+    } senao {
+      precoMaca = kgMaca * 1.50
+    }
+
+    precoTotal = precoMorango + precoMaca
+
+    se ((kgMorango + kgMaca) > 8 ou precoTotal > 25) {
+      desconto = precoTotal - (precoTotal * 0.10)
+    } senao {
+      desconto = precoTotal
+    }
+
+    arredondado = mat.arredondar(desconto, 2)
+
+    escreva("O valor final a ser pago é R$ ", arredondado)
+  }
+}
