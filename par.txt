@@ -1,0 +1,10 @@
+//Exiba todos os números pares de 2 a 20 utilizando o laço repita.
+programa {
+  funcao inicio() {
+    inteiro par=2
+    faca{
+      escreva(par,"\n")
+      par=par+2
+    }enquanto(par<=20)
+  }
+}
