@@ -1,0 +1,15 @@
+//O programa escolhe um número secreto entre 1 e 10. O usuário deve tentar adivinhar o número. O programa deve continuar pedindo até que o usuário acerte
+programa {
+	inclua biblioteca Util --> u
+  funcao inicio() {
+    inteiro nSecreto, tentativa
+    nSecreto= u.sorteia(1,10)
+    faca{
+      escreva("Numero secreto: ")
+      leia(tentativa)
+      se (nSecreto != tentativa){
+      escreva("Numero incorreto \n") }
+    }enquanto(nSecreto != tentativa)
+    escreva("Numero correto")
+  }
+}
