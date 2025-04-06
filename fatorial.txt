@@ -1,0 +1,14 @@
+//Peça ao usuário para digitar um número e calcule seu fatorial usando um laço repita.
+programa {
+  funcao inicio() {
+    inteiro n1, f
+    escreva("Numero para fatorar: ")
+    leia(n1)
+    f = 1
+    faca{
+    f = f * n1
+      n1 = n1 - 1
+    }enquanto(n1>0)
+    escreva("O fatorial é ",f)
+  }
+}
