@@ -1,0 +1,16 @@
+//Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: Volume = pi* Raio * Altura
+programa {
+  funcao inicio() {
+     real volume, raio, altura, pi
+      pi=3.14
+      escreva("Valor do raio (em cm): ")
+      leia(raio)
+      escreva("Valor da altura(em cm): ")
+      leia(altura)
+
+       volume = pi * (raio*raio) * altura
+     
+      escreva("O volume da lata sera de ", volume, " cm³")
+
+   }
+}
