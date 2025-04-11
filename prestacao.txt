@@ -1,0 +1,18 @@
+//Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO ← VALOR + (VALOR * TAXA/100) * TEMPO).
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real  prestacao, valor, taxa, tempo, arredondado
+    escreva("O valor da prestação: ")
+    leia(valor)
+    escreva("A taxa de juros (%): ")
+    leia(taxa)
+    escreva("O tempo de atraso (em meses): ")
+    leia(tempo)
+
+    prestacao=valor+(valor*taxa/100)*tempo
+    arredondado=mat.arredondar(prestacao, 2)
+    escreva("Valor da Prestação em Atraso: R$ ", arredondado, "\n")
+
+  }
+}
