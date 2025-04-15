@@ -1,0 +1,17 @@
+// Elaborar um programa que calcule e apresente o volume de uma caixa retangular, por meio da fórmula
+//VOLUME ← COMPRIMENTO * LARGURA * ALTURA.
+programa { 
+   inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real comprimento, largura, altura, volume, arredondado
+    escreva("Comprimento: ")
+    leia(comprimento)
+    escreva("Largura: ")
+    leia(largura)
+    escreva("Altura: ")
+    leia(altura)
+    volume = comprimento * largura * altura
+    arredondado=mat.arredondar(volume, 3)
+    escreva("O volume da caixa é ", arredondado)
+  }
+}
