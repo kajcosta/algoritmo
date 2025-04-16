@@ -1,0 +1,12 @@
+//Ler dois inteiros (variáveis A e B) e imprimir o resultado do quadrado da diferença do primeiro valor pelo segundo.
+programa {
+  funcao inicio() {
+    inteiro a, b, ab
+    escreva("Valor do primeiro número: ")
+    leia(a)
+    escreva("Valor do segundo número: ")
+    leia(b)
+    ab = (a -b)*(a-b)
+    escreva("O quadrado da diferença de ", a, " e ", b, " é ", ab)
+  }
+}
