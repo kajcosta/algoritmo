@@ -1,0 +1,16 @@
+//Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo um valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido. Lembre-se de verificar se o número fornecido é menor que zero; sendo, multiplique-o por -1. 
+programa {
+  funcao inicio() {
+    inteiro n
+    escreva("O numero é: ")
+    leia(n)
+    se (n < 0) {
+      n = n* -1
+      escreva("O numero transformado em positivo é ", n)
+      }
+    senao{
+      escreva("O numero ", n, " já é positivo")
+    }
+
+  }
+}
