@@ -1,0 +1,12 @@
+//Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário, para que seja apresentado o valor em moeda brasileira.
+programa {
+   inclua biblioteca Matematica --> mat
+  funcao inicio() {
+    real  d, r, arredondado
+     escreva("O valor em dolar: ")
+     leia(d)
+     r = d *5.88
+      arredondado=mat.arredondar(r, 2)
+      escreva(d, " dolares em real é ", arredondado)
+  }
+}
