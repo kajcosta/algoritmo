@@ -1,0 +1,21 @@
+// Ler dois valores numéricos inteiros e apresentar o resultado da diferença do maior pelo menor valor. 
+programa {
+  funcao inicio() {
+    inteiro n1, n2, diferenca
+    
+    escreva("Primeiro número: ")
+    leia(n1)
+    
+    escreva("Segundo número: ")
+    leia(n2)
+    
+    se (n1 > n2) {
+      diferenca = n1 - n2}
+      
+    senao{
+        diferenca = n2 - n1
+        } 
+    
+    escreva("A diferença entre o maior e o menor valor é: ", diferenca)
+  }
+}
