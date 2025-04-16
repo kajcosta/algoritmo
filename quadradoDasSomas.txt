@@ -1,0 +1,22 @@
+//Elaborar um programa que efetue a leitura de três valores (A,B e C) e apresente como resultado final o quadrado da soma dos três valores lidos.
+programa {
+  funcao inicio() {
+  
+     inteiro a, b, c, quadradoSomas 
+
+    escreva("Valor de A: ")
+    leia(a)
+    
+    escreva("Valor de B: ")
+    leia(b)
+    
+    escreva("Valor de C: ")
+    leia(c)
+
+    quadradoSomas = (a + b + c) * (a + b + c)
+    
+    escreva("A soma dos quadrados dos valores é: ", quadradoSomas )
+
+
+  }
+}
