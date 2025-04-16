@@ -1,0 +1,32 @@
+//Efetuar a leitura de três valores (variáveis A, B e C) e efetuar o cálculo da equação completa de segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o referido cálculo. Lembre-se de que a variável A deve ser diferente de zero. 
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+  
+    real a, b, c, delta, raiz1, raiz2, raiz, arR1, arR2
+    escreva("Valor de a (diferente de 0): ")
+    leia(a)
+    se (a != 0){
+      escreva("Valor de b: ")
+      leia(b)
+      escreva("Valor de c: ")
+      leia(c)
+
+       delta = (b * b) - (4 * a * c)
+
+       se(delta<0){
+        escreva("Não há raízes reais, pois o delta no valor de ", delta, " é negativo.")
+       }
+       senao{
+        raiz1 = (-b + mat.raiz(delta,2)) / (2 * a)
+        raiz2 = (-b - mat.raiz(delta,2)) / (2 * a)
+        arR1 = mat.arredondar(raiz1,2)
+        arR2 = mat.arredondar(raiz2,2)
+        escreva("As raízes da equação são: ", arR1 , " e ", arR2)
+       }
+    }
+    senao{
+      escreva("O valor de A tem que ser diferente de 0")
+    }
+  }
+}
