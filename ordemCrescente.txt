@@ -1,0 +1,30 @@
+//Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente.
+programa {
+  funcao inicio() {
+    inteiro numeros[3]
+    escreva("Primeiro valor: ")
+    leia(numeros[0])
+    escreva("Segundo valor: ")
+    leia(numeros[1])
+    escreva("Terceiro valor: ")
+    leia(numeros[2])
+
+     se (numeros[0] == numeros[1] ou numeros[0] == numeros[2] ou numeros[1] == numeros[2]) {
+      escreva("Os numeros precisam ser diferentes para ordenalos")
+     }
+     senao{
+    para (inteiro i = 0; i < 2; i++) {
+      para (inteiro j = i + 1; j < 3; j++) {
+        se (numeros[i] > numeros[j]) {
+          inteiro temporario = numeros[i]
+          numeros[i] = numeros[j]
+          numeros[j] = temporario
+        }
+      }
+    }
+
+    escreva("\nValores em ordem crescente: ", numeros[0], ", ", numeros[1], ", ", numeros[2])
+    }
+  }
+}
+
