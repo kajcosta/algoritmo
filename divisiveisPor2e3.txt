@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    inteiro numeros[4]
+
+    escreva("Primeiro valor: ")
+    leia(numeros[0])
+    escreva("Segundo valor: ")
+    leia(numeros[1])
+    escreva("Terceiro valor: ")
+    leia(numeros[2])
+    escreva("Quarto valor: ")
+    leia(numeros[3])
+
+    escreva("Os números divisíveis por 2 e 3 são:\n")
+
+    para (inteiro i = 0; i < 4; i++) {
+      se (numeros[i] % 2 == 0 e numeros[i] % 3 == 0) {
+        escreva(numeros[i], "\n")
+      }
+    }
+  }
+}
